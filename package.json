@@ -9,16 +9,23 @@
     "gatsby-plugin-react-helmet": "^2.0.11",
     "react-helmet": "^5.2.0"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm run develop",
+    "serve": "gatsby serve",
+    "build": "gatsby build",
+    "build:pp": "gatsby build --prefix-paths",
+    "clean": "rm -rf public",
+    "lint:js": "eslint --ext .js,.jsx .",
+    "format:js": "prettier-eslint 'src/**/*.js' --prettier-last --list-different"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-config-standard-react": "^6.0.0",
     "eslint-plugin-import": "^2.11.0",
@@ -27,6 +34,7 @@
     "eslint-plugin-react": "^7.7.0",
     "eslint-plugin-standard": "^3.1.0",
     "prettier": "^1.12.1",
-    "stylelint-config-prettier": "^3.2.0"
+    "stylelint-config-prettier": "^3.2.0",
+    "stylelint-config-standard": "^18.2.0"
   }
 }

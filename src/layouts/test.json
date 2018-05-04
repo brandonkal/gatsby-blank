@@ -1,19 +1,15 @@
 {
-  "extends": [
-    "standard",
-    "standard-react",
-    "plugin:import/errors",
-    "plugin:react/recommended",
-    "prettier",
+  "extends": ["standard", "standard-react", "plugin:import/errors", "plugin:react/recommended", "prettier",
+    "prettier/standard",
     "prettier/react",
-    "prettier/standard"
   ],
-  "plugins": ["react", "import"],
+  "plugins": ["react", "import", "prettier"],
   "rules": {
     "react/prefer-stateless-function": "off",
     "react/prop-types": "off",
     "react/no-danger": "off",
-    "prefer-destructuring": "off"
+    "prefer-destructuring": "off",
+    "prettier/prettier": "warn"
   },
   "settings": {
     "import/core-modules": []
