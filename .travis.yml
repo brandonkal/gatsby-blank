@@ -3,4 +3,6 @@ node_js:
   - "8"
 
 script:
-  - npm run lint
+  - npm run lint:css
+  - npm run lint:js
+  - npm run check-pretty

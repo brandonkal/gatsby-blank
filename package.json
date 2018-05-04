@@ -18,9 +18,10 @@
     "build": "gatsby build",
     "build:pp": "gatsby build --prefix-paths",
     "clean": "rm -rf public",
-    "lint:js": "eslint --ext .js,.jsx .",
-    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
-    "format:js": "prettier-eslint 'src/**/*.js' --prettier-last --list-different"
+    "lint:js": "./node_modules/.bin/eslint --ext .js,.jsx .",
+    "lint:css": "./node_modules/.bin/stylelint 'src/**/*.css'",
+    "format:js": "prettier-eslint 'src/**/*.js' --prettier-last --list-different",
+    "check-pretty": "./node_modules/.bin/prettier -l 'src/**'"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
