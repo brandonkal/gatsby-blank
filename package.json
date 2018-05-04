@@ -21,6 +21,7 @@
     "build:pp": "gatsby build --prefix-paths",
     "clean": "rm -rf public",
     "lint:js": "eslint --ext .js,.jsx .",
+    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "format:js": "prettier-eslint 'src/**/*.js' --prettier-last --list-different"
   },
   "devDependencies": {
