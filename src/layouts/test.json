@@ -1,7 +1,12 @@
 {
-  "extends": ["standard", "standard-react", "plugin:import/errors", "plugin:react/recommended", "prettier",
+  "extends": [
+    "standard",
+    "standard-react",
+    "plugin:import/errors",
+    "plugin:react/recommended",
+    "prettier",
     "prettier/standard",
-    "prettier/react",
+    "prettier/react"
   ],
   "plugins": ["react", "import", "prettier"],
   "rules": {
